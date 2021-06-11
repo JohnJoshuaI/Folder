@@ -1,0 +1,37 @@
+Use Klaus_Tables
+
+Alter Table City With Nocheck
+	Add Constraint PK_City Primary Key Clustered
+	(City_ID)
+	On [Primary]
+Go
+
+Alter Table State With Nocheck
+	Add Constraint PK_State Key Clustered
+	(State_ID)
+	On [Primary]
+Go
+
+Alter Table Country With Nocheck
+	Add Constraint PK_Country Key Clustered
+	(Country_ID)
+	On [Primary]
+Go
+
+Alter Table Zip_Code With Nocheck
+	Add Constraint PK_Zip_Code Key Clustered
+	(Zip_Code_Id)
+	On [Primary]
+Go
+
+Alter Table Address With Nocheck
+	Add Constraint PK_Address Key Clustered
+	(Address_ID)
+	On [Primary]
+Go
+
+Alter Table Brewing_Location With Nocheck
+	Add Constraint PK_Address Key Clustered
+	(Brewing_Location_ID)
+	On [Primary]
+Go

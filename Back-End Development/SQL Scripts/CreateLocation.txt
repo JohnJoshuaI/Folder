@@ -1,0 +1,58 @@
+/*Database Creation of Tables*/
+
+Use Klaus_Tables
+
+Create Table City
+{
+	CityID Int(3) Not Null,
+	CountryCode Int(4)	Not Null,
+	CityName VarChar(20) Not Null, 
+	StateCode Int(4) Not Null,
+}
+Go
+
+Create Table State
+{
+	StateCode Int(3) Not Null,
+	StateName VarChar(13) Not Null,
+	CountryCode Int(4) Not Null,
+}
+Go
+
+Create Table Country
+{
+	CountryCode Int Not Null,
+	CountryName VarChar(25) Not Null,
+	ZipCode Int(6) Not Null,
+}
+Go
+
+Create Table Zip Code
+{
+	ZipCode Int(6) Not Null,
+	CityID	Int(3) Not Null,
+	CountryCode Int(3) Not Null, 
+}
+Go
+
+Create Table Address
+{
+	AddressID Int(3) Not Null,
+	AddressStreet VarChar(25) Not Null,
+	CityName VarChar(25) Not Null,
+	ZipCode Int(6) Not Null,
+}
+Go
+
+
+
+Creare Table Brewing Location
+{
+	Brewery_ID Int(3) Not Null,
+	Brewery_Address VarChar(25) Not Null,
+	CityId Int(3) Not Null,
+	StateID Int(3) Not Null,
+	ZipCode Int(6) Not Null,
+	CountryCode Int(3) Not Null,
+}
+Go

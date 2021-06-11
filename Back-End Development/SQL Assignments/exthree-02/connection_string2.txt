@@ -1,0 +1,4 @@
+yourusername@ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=cot-cis4338-01.cougarnet.uh.edu)(PORT=1521))(CONNECT_DATA=(SID=orcl)))
+
+--Note that if you have an @ symbol in your password, the connection may fail with an error about a TNS configuration file. To keep the @ symbol in your password, you will likely need to type the password using an escape character in front of the @ symbol.
+

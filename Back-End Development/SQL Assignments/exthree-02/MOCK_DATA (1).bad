@@ -1,0 +1,51 @@
+EMP_ID	FIRST_NAME	LAST_NAME	LASTFOUR_SSN	CO_MOBILE	CO_EMAIL	DEPT_CODE	JOB_TITLE	SUPERVISOR_ID
+1	Brendon	Pilfold	5308	1035936755	bpilfold0@pen.io	HR	Services	4
+2	Freddie	Charopen	5279	9248660339	fcharopen1@pagesperso-orange.fr	PURCHASE	Product Management	5
+3	Chaim	Comi	4508	116418729	ccomi2@wix.com	SALES	Services	3
+4	Robinett	Pawling	5542	1836575092	rpawling3@mapy.cz	SALES	Product Management	1
+5	Demetra	Branchet	4856	4503018248	dbranchet4@t.co	PURCHASE	Business Development	1
+6	Welsh	Trimme	7784	4139756624	wtrimme5@drupal.org	EXEC	Product Management	5
+7	Jarrett	Argente	6625	6332591242	jargente6@usda.gov	HR	Training	1
+8	Natka	Jendrich	3909	4400380696	njendrich7@mapy.cz	ACCT	Services	1
+9	Leonhard	MacGowan	4937	2128462851	lmacgowan8@oakley.com	HR	Business Development	3
+10	Abran	Bastow	7095	8663479689	abastow9@google.de	HR	Human Resources	3
+11	Hester	Phipson	4935	3474478575	hphipsona@chicagotribune.com	PURCHASE	Business Development	1
+12	Dix	Hanscome	3375	4936835331	dhanscomeb@wikipedia.org	EXEC	Accounting	4
+13	Frankie	Dabernott	3294	4329264293	fdabernottc@cam.ac.uk	SALES	Services	4
+14	Aubrie	Antonsson	2413	1666826316	aantonssond@surveymonkey.com	HELPIT	Research and Development	5
+15	Wallie	Bullin	8161	731225287	wbulline@newsvine.com	EXEC	Business Development	3
+16	Dinny	Spragge	5839	5338487241	dspraggef@xinhuanet.com	HR	Engineering	2
+17	Shari	Shickle	5741	9264162259	sshickleg@indiatimes.com	HELPIT	Research and Development	5
+18	Heath	Sedgemore	8314	6951109036	hsedgemoreh@typepad.com	HR	Training	3
+19	Nicolais	Goulter	6173	6164095743	ngoulteri@bluehost.com	HELPIT	Human Resources	5
+20	Boris	Aitken	3410	8848261531	baitkenj@state.tx.us	SALES	Services	5
+21	Ripley	Fosken	6551	3634633190	rfoskenk@hp.com	SALES	Training	4
+22	Eartha	Crafter	3255	1016585977	ecrafterl@patch.com	EXEC	Product Management	3
+23	Violet	Regglar	1560	573209618	vregglarm@issuu.com	ACCT	Legal	1
+24	Keelia	De la Yglesia	8746	1293948098	kdelayglesian@craigslist.org	EXEC	Training	5
+25	Reuven	Whitcombe	3602	3284150943	rwhitcombeo@angelfire.com	PURCHASE	Services	5
+26	Elia	Volkers	6498	2597851230	evolkersp@house.gov	HR	Engineering	1
+27	Hermione	Cornilleau	4522	412682842	hcornilleauq@google.cn	SALES	Support	4
+28	Laurens	Richards	6936	6944478765	lrichardsr@jalbum.net	HR	Sales	3
+29	Erik	Lifton	8578	1264486448	eliftons@goo.gl	PURCHASE	Research and Development	3
+30	Stafani	Kennifick	1336	6888272435	skennifickt@soup.io	SALES	Engineering	1
+31	Marty	Bagguley	7708	2464913901	mbagguleyu@paypal.com	EXEC	Services	2
+32	Charlean	Coweuppe	3883	6384097664	ccoweuppev@360.cn	HELPIT	Human Resources	5
+33	Alana	Merriday	9665	9343768036	amerridayw@issuu.com	ACCT	Services	1
+34	Marielle	Scane	5970	5575434397	mscanex@feedburner.com	EXEC	Product Management	4
+35	Rozanna	Ainge	8490	2688496794	raingey@telegraph.co.uk	EXEC	Legal	5
+36	Olive	Danton	1197	4464978789	odantonz@princeton.edu	PURCHASE	Business Development	5
+37	Lissie	Riceards	6891	346938473	lriceards10@over-blog.com	ACCT	Engineering	5
+38	Valentijn	Wife	6478	5259831837	vwife11@archive.org	PURCHASE	Business Development	4
+39	Rayna	Housam	6343	1100145729	rhousam12@jimdo.com	PURCHASE	Marketing	3
+40	Bernhard	Colquitt	8801	8051863674	bcolquitt13@godaddy.com	PURCHASE	Research and Development	1
+41	Tye	Humerstone	1347	5723317075	thumerstone14@yolasite.com	EXEC	Marketing	2
+42	Chaim	Bock	9059	1814165800	cbock15@google.com.au	SALES	Support	3
+43	Keslie	Flinn	6194	6151681983	kflinn16@examiner.com	PURCHASE	Business Development	3
+44	Rianon	Althrop	2943	2079171240	ralthrop17@moonfruit.com	PURCHASE	Legal	1
+45	Dannie	Kaiser	2700	8296920425	dkaiser18@businesswire.com	EXEC	Legal	5
+46	Esdras	Fortoun	9773	6917799548	efortoun19@wix.com	EXEC	Sales	5
+47	Brod	Westoff	3001	4966617251	bwestoff1a@abc.net.au	PURCHASE	Marketing	2
+48	Chevalier	Vanyukov	9613	4911666277	cvanyukov1b@google.com.au	ACCT	Research and Development	2
+49	Gwendolen	Emlen	2667	6944223031	gemlen1c@squarespace.com	ACCT	Accounting	3
+50	Consalve	McCarroll	4335	1329892240	cmccarroll1d@un.org	HELPIT	Training	4
