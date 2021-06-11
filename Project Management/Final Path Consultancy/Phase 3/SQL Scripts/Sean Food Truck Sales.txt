@@ -1,0 +1,19 @@
+--Insert 
+INSERT INTO [Food_Truck_Sales] ([FoodTruck_Date], [Brewery_ID], [FoodTruck_Sales])
+VALUES ('2020-10-20', '0256', '312.52');
+
+SELECT * FROM [Food_Truck_Sales]
+
+--Update
+Use [Klaus Loyalty Program]
+
+UPDATE [Food_Truck_Sales]
+SET [Brewery_ID] = '52'
+WHERE [FoodTruck_Date] = '2020-10-20';
+
+SELECT * FROM [Food_Truck_Sales]
+
+--Delete
+DELETE FROM [Food_Truck_Sales] WHERE [FoodTruck_Date] = '2020-10-20';
+
+SELECT * FROM [Food_Truck_Sales]

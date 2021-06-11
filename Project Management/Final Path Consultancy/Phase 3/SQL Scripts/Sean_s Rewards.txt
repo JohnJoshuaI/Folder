@@ -1,0 +1,20 @@
+--Insert 
+INSERT INTO [Rewards] ([Reward_Description], [Redemption_Cost])
+VALUES ('2 T-shirts', '400');
+
+INSERT INTO [Rewards] ([Reward_Description], [Redemption_Cost])
+VALUES ('3 T-shirts', '800');
+
+SELECT * FROM [Rewards]
+
+--Update
+UPDATE [Rewards]
+SET [Redemption_Cost] = '500'
+WHERE [Reward_ID] = '1';
+
+SELECT * FROM [Rewards]
+
+--Delete
+DELETE FROM [Rewards] WHERE [Reward_ID] = '1';
+
+SELECT * FROM [Rewards]

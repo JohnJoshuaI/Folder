@@ -1,0 +1,24 @@
+--foreign keys
+Use [Klaus Loyalty Program]
+
+--Reference: token_item (table:token)
+ALTER TABLE [Token] Add Constraint [FK_Token] 
+	FOREIGN KEY (Item_ID)
+	REFERENCES [Item] ([Item_ID]);
+
+--Reference: gift_item (table:gift)
+ALTER TABLE	[Gift] Add Constraint [FK_Gift] 
+	FOREIGN KEY ([Item_ID]) 
+	REFERENCES [Item] ([Item_ID]);
+
+--Reference: gift_set_item_gift_item (table:gift_set_item)
+ALTER TABLE [Gift_Set_Item] Add Constraint [FK_Gift_Set_Item] 
+	FOREIGN KEY ([Gift_ID])
+	REFERENCES [Gift] ([Gift_ID]),
+	Constraint [FK_Gift_Set Item] FOREIGN KEY ([Item_ID])
+	REFERENCES [Item] (Item_ID);
+
+--Reference: flight_item (table:flight)
+ALTER TABLE [Flight] Add Constraint [FK_Flight]
+	FOREIGN KEY (Item_ID)
+	REFERENCES [Item] ([Item_ID]);

@@ -1,0 +1,96 @@
+USE SAMPLE
+
+CREATE TABLE [otherDrinks](
+drinkID INT NOT NULL,
+alcohol VARCHAR(3) NOT NULL,
+oz INT NOT NULL,
+[IsDeleted] bit NOT NULL DEFAULT 0
+Constraint [drinkID] PRIMARY KEY ([drinkID])
+);
+
+GO
+CREATE TABLE [glassware](
+glasswareID INT NOT NULL,
+orderNum INT NOT NULL,
+glassSize VARCHAR(10) NOT NULL,
+glassPrice INT NOT NULL, 
+[IsDeleted] bit NOT NULL DEFAULT 0
+Constraint [PK_glasswareID] PRIMARY KEY ([glasswareID])
+);
+
+
+Go
+CREATE TABLE [TShirts](
+shirtID INT NOT NULL,
+orderNum INT NOT NULL,
+designID INT NOT NULL,
+shirtPrice INT NOT NULL,
+[IsDeleted] bit NOT NULL DEFAULT 0
+Constraint [PK_shirtID] PRIMARY KEY ([shirtID]),
+
+);
+
+Go
+
+CREATE TABLE[shirtDesignID](
+designID VARCHAR(20) NOT NULL,
+shirtSize VARCHAR(10) NOT NULL,
+shirtColor VARCHAR(15) NOT NULL,
+fabric VARCHAR(15) NOT NULL,
+[IsDeleted] bit NOT NULL DEFAULT 0
+Constraint [PK_designID] PRIMARY KEY ([designID])
+);
+
+Go
+
+USE SAMPLE--DB
+INSERT INTO TShirts(shirtID, orderNum,designID,shirtPrice)
+VALUES('58692', '98634','688', '16');
+
+UPDATE TShirts
+SET [designID]='488'
+WHERE[designID]='688'
+SELECT * FROM TShirts
+
+INSERT INTO glassware(glasswareID, orderNum, glassSize, glassPrice)
+VALUES('5875', '3581','16','8');
+
+UPDATE glassware
+SET [glassSize] ='8'
+WHERE [glassSize]='12'
+SELECT * FROM glassware
+
+INSERT INTO shirtDesignID(designID,shirtSize,shirtColor,fabric)
+VALUES('Octoberfest','XL','RED', 'Cotton')
+
+UPDATE shirtDesignID
+SET [shirtColor]='Green'
+WHERE [shirtColor]='RED'
+
+CREATE OR ALTER TRIGGER SoftDelete_TShirts ON [TShirts]
+INSTEAD OF DELETE AS
+Begin
+	SET NOCOUNT ON;
+	UPDATE [TShirts]
+	set [IsDeleted]=1
+	Where shirtID IN (SELECT shirtID FROM deleted);
+END
+
+GO
+DELETE FROM [TShirts] where [shirtID] ='58692'
+
+SELECT * FROM  [TShirts]
+
+CREATE OR ALTER TRIGGER SoftDelete_glassware ON [glassware]
+INSTEAD OF DELETE AS
+BEGIN
+	SET NOCOUNT ON;
+	UPDATE [glassware]
+	set [IsDeleted]=1
+	Where glasswareID IN (SELECT glasswareID FROM deleted);
+END
+
+DELETE FROM [glassware] where [glasswareID]= '5875'
+SELECT * FROM [glassware]
+
+ALTER TABLE [TShirts] add FOREIGN KEY (designID) REFERENCES [shirtDesignID];
