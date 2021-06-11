@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/vue@next"></script>  
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Assignment 6</h1>
+        <h1>{{courseName}}</h1>
+
+        <input  type="text" name="studentName" id="studentName" v-model = "studentName" placeholder = "Type in your Name." />
+
+        <h2>{{studentName}}</h2>
+
+
+        <template v-for="items in Array1"  >
+            <ul v-if="items.B1">
+                <li>{{items}}</li>
+            </ul>
+        </template>
+        <template v-for="items in Array1" >
+            <ul v-if="!items.B1">
+                <li>{{items}}</li>
+            </ul>
+        </template>
+        <h2>Sum of Numbers is: {{sumOfNumbers}}</h2>
+        <h2 >Sum of False Numbers: {{sumOfFalse}}</h2>
+        <h2>Sum of True Numbers: {{sumOfTrue}}</h2>
+
+        <button v-on:click="fontSize++">Increase Font Size</button>
+        <button v-on:click="fontSize--">Decrease Font Size</button>
+        <p v-bind:style="{ fontSize: fontSize + 'px' }">
+            Font size is: {{fontSize}}
+          </p>
+
+
+    
+    </div>
+
+
+<script src="./app.js"></script>
+</body>
+</html>
