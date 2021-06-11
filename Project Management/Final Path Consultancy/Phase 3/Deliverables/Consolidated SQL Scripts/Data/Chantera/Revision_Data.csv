@@ -1,0 +1,10 @@
+1,Change Password,A user changed their password
+2,Change Address,A user changed their address
+3,Change Phone Number,A user changed their phone number
+4,Change Last Name,A user changed their last name
+5,Delete Beer,A beer was deleted from the Beer_List
+6,Change Email,A user changed their email
+7,Delete Product,A product was deleted from the product table
+8,Update Product,A product was updated
+9,Insert Product,A new product was inserted into the products table
+10,Insert Middle Initial,A user inserted their middle initial
